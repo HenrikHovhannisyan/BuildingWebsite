@@ -10,13 +10,13 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./../style.css" />
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    <script src="./../script.js"></script>
   </head>
   <body>
     <!-- Start Header -->
@@ -24,7 +24,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid _container">
           <a class="navbar-brand" href="/">
-            <img src="./img/logo.png" alt="Logo" />
+            <img src="./../img/logo.png" alt="Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -40,15 +40,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav_list m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link nav_link active" href="/">Home</a>
+                <a class="nav-link nav_link" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav_link" href="#about_Us">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav_link" href="./pages/services.html"
-                  >Services</a
-                >
+                <a class="nav-link nav_link active" href="./services.html">
+                  Services
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav_link" href="#resource"> Resource </a>
@@ -58,7 +58,7 @@
               </li>
             </ul>
             <a href="#">
-              <img src="./img/user.png" alt="Logo" />
+              <img src="./../img/user.png" alt="Logo" />
             </a>
           </div>
         </div>
@@ -68,70 +68,98 @@
 
     <!-- Start Main -->
     <main>
-      <section id="banner" class="_container">
+      <section id="services_banner" class="_container">
         <div class="banner_container">
-          <h2><b>Transforming HR for</b></h2>
-          <h2>a Brighter Future.</h2>
-          <p>Innovative solutions for your HR needs.</p>
-          <button class="btn _btn">Get Started</button>
+          <h2><b>Our HR</b></h2>
+          <h2>Services Include</h2>
+          <p>
+            We empower businesses to reach their full potential through comprehensive and innovative HR services. 
+          </p>
+          <p>
+            Our team of experts is dedicated to streamlining your human resources processes, enhancing employee engagement, and driving organizational success.
+          </p>
         </div>
       </section>
       <section id="count">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-4 text-center">
-              <div class="count_number">256</div>
-              <p class="count_text">Company</p>
+            <div class="col-12 text-center">
+              <p class="count_text">
+                Our <b>Services</b>
+              </p>
             </div>
-            <div class="col-12 col-md-4 text-center">
-              <div class="count_number">152+</div>
-              <p class="count_text">Worker</p>
-            </div>
-            <div class="col-12 col-md-4 text-center">
-              <div class="count_number">256</div>
-              <p class="count_text">Company</p>
             </div>
           </div>
         </div>
       </section>
-      <section id="info">
-        <div class="info_container">
-          <h2><b>Who</b> we are ?</h2>
-          <p>
-            Nobel Niche Executive Recruitment is a premier staffing agency
-            specializing in executive placements across diverse industries. Our
-            mission is to connect exceptional talent with forward-thinking
-            organizations worldwide. As a trusted partner, we provide tailored
-            solutions to meet our clients’ and candidates’ strategic needs. We
-            pride ourselves in re-shaping the overall experience from
-            transactional to authentic and human.
-          </p>
-        </div>
-      </section>
-      <section id="focuses" class="container">
-        <h2>Our industry <b>focuses</b></h2>
+      <section id="services_container" class="container">
         <div class="row mt-5">
-          <div class="col-12 col-md-4 focuses_card">
-            <img src="./img/icons/1.png" alt="" />
-            <p>Global 3PL</p>
-            <p>Logistics</p>
+          <div class="col-12 col-md-4">
+            <div class="services_focuses_card">
+              <img src="./../img/icons/1.png" alt="" class="mb-0" />
+            </div>
+            <div class="services_focuses_card_container">
+              <h3>Executive Search</h3>
+              <p>
+                We excel in identifying and attracting top-tier executives who  drive organizational success. 
+              </p>
+              <p>
+                Our rigorous assessment process of both your      needs as well as the candidate’s, ensures the perfect fit for each role.
+              </p>
+            </div>
           </div>
-          <div class="col-12 col-md-4 focuses_card">
-            <img src="./img/icons/2.png" alt="" />
-            <p>Production</p>
+          <div class="col-12 col-md-4">
+            <div class="services_focuses_card">
+              <img src="./../img/icons/2.png" alt="" class="mb-0" />
+            </div>
+            <div class="services_focuses_card_container">
+              <h3>Talent Pipelining</h3>
+              <p>
+                Beyond immediate placements, we offer a proactive approach by  building talent pipelines. 
+              </p>
+              <p>
+                This service helps clients anticipate future needs and maintain a competitive edge.
+              </p>
+            </div>
           </div>
-          <div class="col-12 col-md-4 focuses_card">
-            <img src="./img/icons/3.png" alt="" />
-            <p>Retail</p>
+          <div class="col-12 col-md-4">
+            <div class="services_focuses_card">
+              <img src="./../img/icons/3.png" alt="" class="mb-0" />
+            </div>
+            <div class="services_focuses_card_container">
+              <h3>Talent Analytics</h3>
+              <p>
+                Our proprietary tools analyze candidate data, providing valuable insights for strategic workforce planning.
+              </p>
+              <p>
+                We assist clients in making informed decisions based on data-driven recommendations.
+              </p>
+            </div>
           </div>
-          <div class="col-12 col-md-4 focuses_card">
-            <img src="./img/icons/4.png" alt="" />
-            <p>Transportation</p>
+          <div class="col-12 col-md-4">
+            <div class="services_focuses_card">
+              <img src="./../img/icons/4.png" alt="" class="mb-0" />
+            </div>
+            <div class="services_focuses_card_container">
+              <h3>Start-Up Consulting</h3>
+              <p>
+                Our experienced team provides strategic guidance to start-ups, helping them navigate challenges and build strong foundations for growth.
+              </p>
+              <p>
+                Don’t have an HR department but need one? We can help identify what roles you need at your unique growth stage and help you build a strong foundation to retain your talent.
+              </p>
+            </div>
           </div>
-          <div class="col-12 col-md-4 focuses_card">
-            <img src="./img/icons/5.png" alt="" />
-            <p>Start-Up</p>
-            <p>Support</p>
+          <div class="col-12 col-md-4">
+            <div class="services_focuses_card">
+              <img src="./../img/icons/5.png" alt="" class="mb-0" />
+            </div>
+            <div class="services_focuses_card_container">
+              <h3>HR Team Building <br> & Optimization</h3>
+              <p>
+                We collaborate with HR departments to enhance business acumen, team dynamics, streamline processes, and maximize efficiency.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -219,20 +247,20 @@
     <!-- Start Footer -->
     <footer class="py-3 mb-0">
       <a class="navbar-brand" href="/">
-        <img src="./img/logo.png" alt="Logo" />
+        <img src="./../img/logo.png" alt="Logo" />
       </a>
       <div class="w-100">
         <ul class="nav justify-content-center pb-3 mb-3">
           <li class="nav-item">
-            <a class="nav-link nav_link active" href="/">Home</a>
+            <a class="nav-link nav_link" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link nav_link" href="#about_Us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav_link" href="./pages/services.html"
-              >Services</a
-            >
+            <a class="nav-link nav_link active" href="./services.html">
+              Services
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link nav_link" href="#resource"> Resource </a>
