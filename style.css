@@ -33,6 +33,7 @@ a {
   color: #212121;
   padding: 18px 28px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 /* Start Header */
@@ -76,9 +77,9 @@ nav {
 
 #banner h2 {
   font-family: Montserrat;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 400;
-  line-height: 100px;
+  line-height: 80px;
   color: #031422;
 }
 
@@ -189,7 +190,7 @@ nav {
 }
 
 #contact_us > form textarea {
-  height: 344px;
+  height: 213px;
 }
 
 #contact_us > form .form-group {
@@ -210,12 +211,14 @@ nav {
 }
 
 #contact_us > form input,
+#contact_us > form select,
 #contact_us > form textarea {
   border: 3px solid #d5d5d5;
   padding: 14px 20px;
 }
 
-#contact_us > form input::placeholder {
+#contact_us > form input::placeholder,
+#contact_us > form textarea::placeholder {
   font-family: Roboto;
   font-size: 22.6px;
   font-weight: 400;
@@ -247,7 +250,7 @@ footer p {
 
 /* Start Services page */
 #services_banner {
-  background-image: url("./img/banner2.jpg");
+  background-image: url("./img/banner2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -445,6 +448,9 @@ footer p {
 /*=============== BREAKPOINTS ===============*/
 /* lg - For large devices */
 @media screen and (max-width: 992px) {
+  nav .navbar-brand > img {
+    height: 35px;
+  }
   .nav_list {
     gap: 0px;
   }
