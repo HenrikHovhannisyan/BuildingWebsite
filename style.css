@@ -559,6 +559,33 @@ footer p {
 }
 /* End Social Links */
 
+/* Start Social Links */
+#social {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #031422;
+  border-radius: 0px 20px 20px 0px;
+  width: max-content;
+  padding: 30px 22px 30px 29px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 30px;
+    }
+
+    li:nth-last-child(-n + 1) {
+      margin-bottom: 0;
+    }
+  }
+}
+/* ENd Social Links */
+
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 1200px) {
   .nav_link {
@@ -597,6 +624,7 @@ footer p {
       }
     }
   }
+<<<<<<< HEAD
 
   #resource_info {
     margin-top: 60px;
@@ -625,6 +653,8 @@ footer p {
       gap: 40px;
     }
   }
+=======
+>>>>>>> e3687972ec97cef486ad02ebc7580f5eecb28db6
 }
 
 /* md - For medium devices */
