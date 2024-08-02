@@ -24,3 +24,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: "en" },
+    "google_translate_element"
+  );
+
+  setTimeout(function () {
+    let select = document.querySelector(".goog-te-combo");
+    if (select) {
+      let allowedLanguages = ["en", "de", "es", "it"];
+      for (let i = select.options.length - 1; i >= 0; i--) {
+        let option = select.options[i];
+        if (!allowedLanguages.includes(option.value)) {
+          select.remove(i);
+        }
+      }
+    }
+  }, 1000);
+}

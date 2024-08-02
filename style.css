@@ -17,6 +17,32 @@ a {
   text-decoration: none;
 }
 
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none;
+}
+
+.skiptranslate.goog-te-gadget > div > span,
+.skiptranslate.goog-te-gadget > span {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  top: 10px;
+  position: relative;
+  color: transparent !important;
+}
+
+.skiptranslate.goog-te-gadget select.goog-te-combo {
+  display: block;
+  width: 100px; 
+  background: transparent;
+  font-family: Montserrat;
+}
+
+body {
+  top: 0 !important;
+}
+
 ._container {
   max-width: 1920px;
   margin: auto;
@@ -51,6 +77,7 @@ nav {
   font-weight: 400;
   line-height: 29.26px;
   color: #031422;
+  text-transform: capitalize;
 }
 
 .nav_link.active {
