@@ -26,12 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
+  new google.translate.TranslateElement("google_translate_element");
 
-  setTimeout(function () {
+  function filterLanguages() {
     let select = document.querySelector(".goog-te-combo");
     if (select) {
       let allowedLanguages = ["en", "de", "es", "it"];
@@ -41,6 +38,17 @@ function googleTranslateElementInit() {
           select.remove(i);
         }
       }
+    }
+  }
+
+  setTimeout(function () {
+    filterLanguages();
+
+    let select = document.querySelector(".goog-te-combo");
+    if (select) {
+      select.addEventListener("change", function () {
+        setTimeout(filterLanguages, 500);
+      });
     }
   }, 1000);
 }

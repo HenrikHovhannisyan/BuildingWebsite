@@ -27,16 +27,18 @@ a {
 }
 
 .goog-te-gadget {
-  top: 10px;
+  top: 7px;
   position: relative;
   color: transparent !important;
 }
 
 .skiptranslate.goog-te-gadget select.goog-te-combo {
   display: block;
-  width: 100px; 
+  width: unset;
+  padding: 3px;
   background: transparent;
   font-family: Montserrat;
+  border-radius: 5px;
 }
 
 body {
